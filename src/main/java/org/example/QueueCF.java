@@ -1,12 +1,13 @@
 package org.example;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class QueueCF {
+
     public static void main(String[] args) {
 
-        Queue<Integer> q = new LinkedList<>();
+       // Queue<Integer> q = new LinkedList<>();
+       Queue<Integer> q = new ArrayDeque<>();
 
         q.add(1);
         q.add(2);

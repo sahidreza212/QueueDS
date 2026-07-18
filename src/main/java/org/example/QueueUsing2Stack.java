@@ -23,6 +23,13 @@ public class QueueUsing2Stack {
             }
         }
 
+        public static int remove(){
+            if(isEmpty()){
+                return -1;
+            }
+            return s1.pop();
+        }
+
     }
 
     public static void main(String[] args) {

@@ -32,6 +32,20 @@ public class CircularQueue {
             rear = (rear+1)%size ;
             arr[rear] = data;
         }
+        // Dequeue element
+        public static int remove(){
+            if(isEmpty()){
+                System.out.println("Queue is empty");
+                return -1;
+            }
+            int result = arr[front];
+            if(rear == front){
+                rear = front-1;
+            }else {
+                front = (front+1)%size;
+            }
+            return result;
+        }
     }
 
     public static void main(String[] args) {
@@ -41,5 +55,9 @@ public class CircularQueue {
         q.add(3);
         q.add(4);
         q.add(5);
+
+        while (!q.isEmpty()){
+            System.out.println();
+        }
     }
 }

@@ -30,6 +30,13 @@ public class QueueUsing2Stack {
             return s1.pop();
         }
 
+        public static int peek(){
+            if(isEmpty()){
+                return -1;
+            }
+            return s1.peek();
+        }
+
     }
 
     public static void main(String[] args) {
@@ -40,9 +47,9 @@ public class QueueUsing2Stack {
         q.add(4);
         q.add(5);
 
-//        while (!q.isEmpty()){
-//            System.out.println(q.peek());
-//            q.remove();
-//        }
+        while (!q.isEmpty()){
+            System.out.println(q.peek());
+            q.remove();
+        }
     }
 }
